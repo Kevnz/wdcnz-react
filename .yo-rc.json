@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Reacting to Complexity",
+    "packageVersion": "0.0.1",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "kevnz",
+    "githubRepository": "wdcnz-react"
+  }
+}

@@ -1,0 +1,15 @@
+<h2>JSX Hello World</h2>
+
+<pre>
+    <code class="javascript">
+/** @jsx React.DOM */
+
+var hello = React.createClass({
+    render: function() {
+        return <div>Hello World</div>;
+    }
+});
+ 
+React.renderComponent(<hello></hello>, document.body);
+    </code>
+</pre>
