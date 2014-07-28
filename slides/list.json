@@ -29,6 +29,7 @@
     ],
     [
         "jsx-like-javascript-but-with-xml.html",
+        "jsx-xml-no.html",
         "jsx-hello-world.html"
     ],
     "diffing-the-virtual-dom.html",
@@ -67,5 +68,6 @@
     "bonus-rounds.html",
     "undo.html",
     "extra-libraries.html",
-    "credits.html"
+    "credits.html",
+    "the-end.html"
 ]
