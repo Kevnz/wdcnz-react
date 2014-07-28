@@ -1,0 +1,15 @@
+<h2>Example of Properties</h2>
+
+<pre>
+    <code>
+/** @jsx React.DOM */
+
+var Hello = React.createClass({
+    render: function() {
+        return <div>Hello {this.props.name}</div>;
+    }
+});
+ 
+React.renderComponent(<Hello name="World" />, document.body);
+    </code>
+</pre>

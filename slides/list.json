@@ -22,7 +22,15 @@
         "two-way-databinding.html",
         "databinding-complexity.html"
     ],
-    "the-beginnings.html",
+    [
+        "the-beginnings.html",
+        "facebook.html",
+        "instagram.html",
+        "announcing.html",
+        "reaction.html",
+        "reaction-more.html",
+        "reaction-even-more.html"
+    ],
     [
         "react.html",
         "hello-world.html"
@@ -32,7 +40,13 @@
         "jsx-xml-no.html",
         "jsx-hello-world.html"
     ],
-    "diffing-the-virtual-dom.html",
+    [
+        "diffing-the-virtual-dom.html",
+        "virtual-dom.html",
+        "dirty-virtual-dom.html",
+        "rerendered-virtual-dom.html",
+        "rerendered-some-virtual-dom.html"
+    ],
     "bits-and-pieces-of-react.html",
     [
         "the-api.html",
@@ -50,8 +64,30 @@
         "the-api-reactchildrencount.html",
         "the-api-reactchildrenonly.html"
     ],
-    "state-and-props.html",
-    "internal-methods.html",
+    [
+        "state-and-props.html",
+        "props-example.html",
+        "state-example.html"
+    ],
+    [
+        "component-specification.html",
+        "comp-render.html",
+        "comp-getinitialstate.html",
+        "comp-getdefaultprops.html",
+        "comp-proptypes.html",
+        "comp-mixins.html",
+        "comp-statics.html",
+        "comp-displayname.html"
+    ],
+    [
+        "component-lifecycle.html",
+        "component-mounting.html",
+        "component-updating.html",
+        "component-unmounting.html"
+    ],
+    [
+        "internal-methods.html"
+    ],
     "taking-that-and-running.html",
     "taking-it-further.html",
     "the-data-flows.html",

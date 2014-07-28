@@ -1,3 +1,10 @@
-<h2>The API - React.Children.map</h2>
+<h2>React.Children.map</h2>
 
-<p>Please change me!</p>
+<pre>
+    <code>
+object React.Children.map(object children, function fn [, object context])
+    </code>
+</pre>
+<aside class="notes">
+    Invoke fn on every immediate child contained within children with this set to context. If children is a nested object or array it will be traversed: fn will never be passed the container objects. If children is null or undefined returns null or undefined rather than an empty object.
+</aside>

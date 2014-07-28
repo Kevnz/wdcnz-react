@@ -1,3 +1,9 @@
-<h2>The API - renderComponentToStaticMarkup</h2>
+<h2>React . renderComponentToStaticMarkup</h2>
 
-<p>Please change me!</p>
+<pre>
+    <code>
+        string renderComponentToStaticMarkup(ReactComponent component)
+    </code>
+</pre>
+<aside class="notes">
+Similar to renderComponentToString, except this doesn't create extra DOM attributes such as data-react-id, that React uses internally. This is useful if you want to use React as a simple static page generator, as stripping away the extra attributes can save lots of bytes.</aside>

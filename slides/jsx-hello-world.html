@@ -13,3 +13,15 @@ var Hello = React.createClass({
 React.renderComponent(&lt;Hello /&gt;, document.body);
     </code>
 </pre>
+<h3>Becomes</h3>
+<pre>
+    <code class="javascript">
+var Hello = React.createClass({displayName: 'Hello',
+    render: function() {
+        return React.DOM.div(null, "Hello World");
+    }
+});
+ 
+React.renderComponent(Hello(null), document.body);
+    </code>
+</pre>
