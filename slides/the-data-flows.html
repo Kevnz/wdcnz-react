@@ -1,0 +1,7 @@
+<h2>The Data Flows</h2>
+
+<pre>Views ---&gt; (actions) ----&gt; Dispatcher ---&gt; (registered callback) ---&gt; Stores -------+
+Ʌ                                                                                   |
+|                                                                                   V
++-- (Controller-Views "change" event handlers) ---- (Stores emit "change" events) --+
+</pre>

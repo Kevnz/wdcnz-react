@@ -1,0 +1,16 @@
+<h2>Component Mounting</h2>
+
+<pre>
+    <code>
+componentWillMount()
+
+componentDidMount()
+    </code>
+</pre>
+<aside class="notes">
+    Invoked once, both on the client and server, immediately before the initial rendering occurs. If you call setState within this method, render() will see the updated state and will be executed only once despite the state change. <br />
+    <br />
+    Invoked immediately after rendering occurs, only on the client (not on the server). At this point in the lifecycle, the component has a DOM representation which you can access via this.getDOMNode().
+<br />
+If you want to integrate with other JavaScript frameworks, set timers using setTimeout or setInterval, or send AJAX requests, perform those operations in this method.
+</aside>

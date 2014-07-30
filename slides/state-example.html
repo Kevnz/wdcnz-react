@@ -1,0 +1,27 @@
+<h2>Example of State</h2>
+<pre>
+    <code class="javascript">
+/** @jsx React.DOM */
+
+var LikeButton = React.createClass({
+  getInitialState: function() {
+    return {liked: false};
+  },
+  handleClick: function(event) {
+    this.setState({liked: !this.state.liked});
+  },
+  render: function() {
+    var text = this.state.liked ? 'like' : 'unlike';
+    return (
+      &lt;p onClick={this.handleClick}&gt;
+        You {text} this. Click to toggle.
+     &lt;/p&gt;
+    );
+  }
+});
+React.renderComponent(
+  &lt;LikeButton /&gt;,
+  document.getElementById('example')
+);
+    </code>
+</pre>
