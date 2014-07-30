@@ -10,13 +10,13 @@
         },
         "mv-backbone.html",
         "mv-knockout.html",
+        "mv-ember.html",
         "mv-angular.html",
         {
             "attr": {
                 "data-background": "/img/censored.gif"
             }
-        },
-        "mv-ember.html"
+        }
     ],
     [
         "two-way-databinding.html",
@@ -86,10 +86,17 @@
         "component-unmounting.html"
     ],
     [
-        "internal-methods.html"
+        "internal-methods.html",
+        "setstate.html",
+        "replacestate.html",
+        "forceupdate.html",
+        "getdomnode.html",
+        "ismounted.html",
+        "transferpropsto.html",
+        "setprops.html",
+        "replaceprops.html"
     ],
     "taking-that-and-running.html",
-    "taking-it-further.html",
     "the-data-flows.html",
     [
         "flux-the-parts.html",

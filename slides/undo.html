@@ -1,3 +1,40 @@
 <h2>Undo</h2>
-
-<p>Please change me!</p>
+<pre><code>
+var UndoMixin = {
+  getInitialState: function() {
+    return {
+      undo: []
+    };
+  },
+  handleUndo: function() {
+    if (this.state.undo.length === 0) {
+      return;
+    }
+    var nextUndo = _.initial(this.state.undo);
+    var nextState = _.last(this.state.undo);
+    nextState.undo = nextUndo;
+    this.setState(nextState);
+  },
+  handleUndoMixinKeyDown: function(ev) {
+    if (!(ev.which === 90 && (ev.ctrlKey || ev.altKey))) {
+      return;
+    }
+    this.handleUndo();
+  },
+  componentDidMount: function() {
+    document.addEventListener('keydown', this.handleUndoMixinKeyDown);
+  },
+  componentWillUnmount: function() {
+    document.removeEventListener('keydown', this.handleUndoMixinKeyDown);
+  },
+  setStateWithUndo: function(state, callback) {
+    var undo = this.state.undo.slice(0);
+    var undoItem = _.clone(this.state);
+    delete undoItem.undo;
+    undo.push(undoItem);
+    var nextState = _.extend({undo: undo}, state);
+    this.setState(nextState, callback);
+  }
+};
+</pre>
+</code>

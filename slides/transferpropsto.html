@@ -1,0 +1,13 @@
+<h2>transferPropsTo</h2>
+<pre><code>
+ReactComponent transferPropsTo(ReactComponent targetComponent)
+</pre></code>
+<pre><code>
+var Avatar = React.createClass({
+    render: function() {
+        return this.transferPropsTo(
+            <img src={"/avatars/" + this.props.userId + ".png"} userId={null} />
+        );
+    }
+});
+</pre></code>
