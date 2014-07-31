@@ -110,7 +110,11 @@
     "flux-additional-libraries.html",
     "bonus-rounds.html",
     "undo.html",
-    "extra-libraries.html",
+    [
+        "extra-libraries.html",
+        "ui-components.html",
+        "model-management.html"
+    ],
     "credits.html",
     "the-end.html"
 ]
