@@ -5,7 +5,7 @@
         "the-state-of-mv.html",
         {
             "attr": {
-                "data-background": "/img/warning.gif"
+                "data-background": "img/warning.gif"
             }
         },
         "mv-backbone.html",
@@ -14,7 +14,7 @@
         "mv-angular.html",
         {
             "attr": {
-                "data-background": "/img/censored.gif"
+                "data-background": "img/censored.gif"
             }
         }
     ],
