@@ -6,7 +6,7 @@ ReactComponent transferPropsTo(ReactComponent targetComponent)
 var Avatar = React.createClass({
     render: function() {
         return this.transferPropsTo(
-            <img src={"/avatars/" + this.props.userId + ".png"} userId={null} />
+            &lt;img src={"/avatars/" + this.props.userId + ".png"} userId={null} /&gt;
         );
     }
 });
